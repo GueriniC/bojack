@@ -1,0 +1,290 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  background-color: #336699;
+}
+
+main {
+  margin-top: 20px;
+}
+/*Text*/
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 30px;
+  text-align: center;
+}
+h3 {
+  font-size: 30px;
+}
+h4 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 18px;
+  word-spacing: 4px;
+  text-indent: 10px;
+}
+strong {
+  color: #122e4b;
+  font-style: italic;
+}
+q {
+  font-style: italic;
+}
+
+/*HEADER*/
+.banner {
+  display: flex;
+  padding: 30px;
+  background-color: #122e4b50;
+  border-radius: 10px;
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.banner-im {
+  width: 60%;
+  border-radius: 10px;
+}
+
+/*NAV BAR*/
+nav {
+  padding: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.namenav {
+  display: flex;
+  width: 60%;
+}
+.dropdown {
+  width: calc(100% / 5);
+  align-items: center;
+  justify-content: center;
+}
+button.navlinks {
+  background-color: #95e5e600;
+}
+nav:hover {
+  opacity: 1;
+  background-color: #122e4bb0;
+}
+.namenav a {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  padding: 10px;
+  display: block;
+  font-size: 10px;
+}
+
+.namenav a:hover {
+  color: rgb(6, 197, 197);
+  letter-spacing: 6px;
+}
+
+.dropdown .navlinks {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #122e4b;
+  min-width: 360px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*PARA TODAS LAS SECCIONES
+.introduction,
+.lahistoria,
+.pj,
+.analisis,
+.liint {
+  margin-top: 100px;
+} */
+
+/*Introducción*/
+
+.introduction-intro {
+  margin: 50px;
+  display: flex;
+  gap: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.introduction-intro > p {
+  margin: 15px;
+}
+.introduction-intro > img {
+  width: 400px;
+}
+.textintro {
+  width: 1000px;
+}
+
+/*personajes*/
+.flexpj {
+  display: flex;
+}
+.character {
+  width: calc(100% / 3);
+  margin: 30px;
+  text-align: center;
+  justify-content: center;
+  box-shadow: 5px 5px 4px 3px #0000004f;
+  border-radius: 20px;
+  background-color: #122e4b50;
+  margin-bottom: 50px;
+}
+
+.picandtext {
+  justify-content: center;
+  padding: 0 20px 0 20px;
+  min-height: 850px;
+}
+
+.pj img {
+  width: 100%;
+  box-shadow: 5px 5px 4px 3px #0000004f;
+  border-radius: 20px;
+}
+.textpj p,
+q {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  font-size: 16px;
+  text-align: start;
+  word-spacing: 2px;
+  text-indent: 0;
+  display: block;
+}
+.textpj strong {
+  color: rgb(255, 255, 255);
+}
+
+/*EPISODIOS*/
+.capitulos {
+  display: flex;
+}
+.cap img {
+  width: 100%;
+}
+
+.textincap:hover {
+  visibility: visible;
+}
+.textincap p,
+h4 {
+  text-indent: 0;
+  margin: 3px;
+}
+
+.cap {
+  width: calc(100% / 4);
+
+  position: relative;
+}
+
+.textincap {
+  text-align: center;
+  position: absolute;
+  bottom: 50%;
+  background: black;
+  color: white;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.cap:hover div {
+  padding: 8px;
+  visibility: visible;
+  opacity: 0.7;
+}
+
+/*Analisis*/
+.bloqueanalisis {
+  display: flex;
+  gap: 20px;
+}
+
+.analisis_in {
+  width: 628px;
+  position: relative;
+  justify-content: center;
+}
+.analisis_in img {
+  display: block;
+}
+.textanalisis {
+  position: absolute;
+  top: 45px;
+  padding: 15px;
+  visibility: hidden;
+  position: absolute;
+  display: inline-block;
+}
+.analisis_in:hover .textanalisis {
+  visibility: visible;
+}
+.analisis_in:hover img {
+  opacity: 0.2;
+}
+.textanalisis p {
+  font-size: 16px;
+  color: black;
+}
+
+/*LINKS*/
+.linksdein {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.links {
+  text-align: center;
+}
+.links img {
+  width: 200px;
+}
+.links p {
+  font-size: 15px;
+}
+
+footer p {
+  font-size: 10px;
+  margin: 0;
+  text-align: center;
+}
