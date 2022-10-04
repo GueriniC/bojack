@@ -313,14 +313,19 @@ footer {
   text-align: center;
 }
 
-.info1 p,
+.info1 li,
 a {
-  font-size: 12px;
+  font-size: 16px;
   margin: 5px;
   text-align: center;
   color: white;
+  list-style: none;
+}
+a:hover {
+  color: #122e4bb0;
 }
 footer img {
-  width: 100px;
+  width: 250px;
   border-radius: 12px;
+  opacity: 0.8;
 }
