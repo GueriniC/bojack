@@ -280,7 +280,8 @@ input[type="reset"]:hover {
   color: rgb(236, 236, 236);
 }
 .imagenpj > p::before {
-  content: url("/assets/personajes/mic.png");
+  content: url("../assets/personajes/mic.png");
+  width: 50px;
   margin-right: 5px;
 }
 
@@ -374,7 +375,7 @@ h4 {
   width: 500px;
 }
 .dest > div {
-  background: url(/assets/destacados/spoiler.png),
+  background: url(../assets/destacados/spoiler.png),
     linear-gradient(0deg, #941818 5%, #336699 100%);
 
   width: 200px;
@@ -431,14 +432,6 @@ h4 {
   margin: 0;
   margin-left: 5px;
 }
-/*
-.cuadrodest > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}*/
-
 /*Analisis*/
 
 .analisis_in {
