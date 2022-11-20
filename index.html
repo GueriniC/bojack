@@ -6,67 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BoJack Horseman</title>
     <link href="style/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik+Distressed&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#336699" />
+    <meta name="msapplication-TileColor" content="#336699" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
     <header>
       <nav>
-        <div class="namenav">
+        <div>
           <div class="dropdown">
-            <button class="navlinks">
-              <a href="#int" class="navlinks">Introducción</a>
+            <button class="navlinks selected">
+              <a href="index.html" class="navlinks">Introducción</a>
             </button>
           </div>
           <div class="dropdown">
             <button class="navlinks">
-              <a href="#per" class="navlinks">Personajes</a>
+              <a href="personajes.html" class="navlinks">Personajes</a>
             </button>
             <div class="dropdown-content">
-              <a href="#boj">BoJack</a>
-              <a href="#todd">Todd Chavez</a>
-              <a href="#pc">Princess Carolyn</a>
-              <a href="#dn">Dyane Nguyen</a>
-              <a href="#sl">Sarah Lynn</a>
-              <a href="#mrp">Mr. Peanutbutter</a>
-              <a href="#hh">Hollyhock</a>
-              <a href="#bh">Beatrice Horseman</a>
-              <a href="#hk">Herb Kazzaz</a>
+              <a href="personajes.html#boj">BoJack</a>
+              <a href="personajes.html#todd">Todd Chavez</a>
+              <a href="personajes.html#pc">Princess Carolyn</a>
+              <a href="personajes.html#dn">Dyane Nguyen</a>
+              <a href="personajes.html#sl">Sarah Lynn</a>
+              <a href="personajes.html#mrp">Mr. Peanutbutter</a>
+              <a href="personajes.html#hh">Hollyhock</a>
+              <a href="personajes.html#bh">Beatrice Horseman</a>
+              <a href="personajes.html#hk">Herb Kazzaz</a>
             </div>
           </div>
 
           <div class="dropdown">
             <button class="navlinks">
-              <a href="#his" class="navlinks">La historia</a>
+              <a href="historia.html" class="navlinks">La historia</a>
             </button>
             <div class="dropdown-content">
-              <a href="#s1">Temporada 1</a>
-              <a href="#sn">Especial navideño</a>
-              <a href="#s2">temporada 2</a>
-              <a href="#s3">temporada 3</a>
-              <a href="#s4">temporada 4</a>
-              <a href="#s5">temporada 5</a>
-              <a href="#s6">temporada 6</a>
+              <a href="historia.html#s1">Temporada 1</a>
+              <a href="historia.html#sn">Especial navideño</a>
+              <a href="historia.html#s2">temporada 2</a>
+              <a href="historia.html#s3">temporada 3</a>
+              <a href="historia.html#s4">temporada 4</a>
+              <a href="historia.html#s5">temporada 5</a>
+              <a href="historia.html#s6">temporada 6</a>
             </div>
+          </div>
+          <div class="dropdown">
+            <button class="navlinks">
+              <a href="epdest.html	" class="navlinks">Episodios destacados</a>
+            </button>
           </div>
 
           <div class="dropdown">
             <button class="navlinks">
-              <a href="#ana" class="navlinks">Análisis</a>
+              <a href="analisis.html" class="navlinks">Análisis</a>
             </button>
             <div class="dropdown-content">
-              <a href="#a1">Debate existencial</a>
-              <a href="#a2">Villano como protagonista</a>
-              <a href="#a3">Cierre impecable</a>
+              <a href="analisis.html#a1">Debate existencial</a>
+              <a href="analisis.html#a2">Villano como protagonista</a>
+              <a href="analisis.html#a3">Cierre impecable</a>
             </div>
           </div>
           <div class="dropdown">
             <button class="navlinks">
-              <a href="#linksdeint" class="navlinks">Links</a>
+              <a href="links.html" class="navlinks">Links</a>
             </button>
           </div>
         </div>
-        <ig src="/assets/logos/amazon.svg" />
       </nav>
+
       <div class="banner">
         <img
           class="banner-im"
@@ -78,16 +110,15 @@
     </header>
 
     <main>
-      <div class="introduction" id="int">
+      <section class="introduction" id="int">
         <h2>Introducción</h2>
-
-        <div class="introduction-intro">
+        <div>
           <img
             class="cover"
             src="assets/otros/cover.png"
             alt="Cover de BoJack "
           />
-          <div class="textintro">
+          <div>
             <p>
               La serie estadounidense
               <strong lang="en">BoJack Horseman</strong> trata la historia de
@@ -134,1136 +165,58 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <div class="pj" id="per">
-        <h2>Personajes</h2>
-        <div class="flexpj">
-          <div class="character" id="boj">
-            <h3 lang="en">BoJack F. Horseman</h3>
-            <div class="picandtext">
-              <img src="assets/personajes/bojack.png" alt="BoJack" />
-              <div class="textpj">
-                <p>La serie gira en torno a su vida.</p>
-                <p>
-                  Teme que los demás descubran que se odia a sí mismo, y a lo
-                  largo de la serie muestra comportamientos narcisistas.
-                </p>
-                <q
-                  >Tengo la sensación de que nací con una fuga, y cualquier cosa
-                  buena acabará saliendo lentamente de mí y creo que ya no me
-                  queda nada. Ya es tarde</q
-                >
-                <q
-                  >Lo más importante es darle siempre a esa gente todo lo que
-                  quiere, aunque te deje destrozada. Aunque te deje vacía hasta
-                  no ser más que una cáscara hueca</q
-                >
-                <q
-                  >¿Lo ves, Sarah Lynn? No estamos condenados. Si lo piensas
-                  fríamente, somos como motitas que algún día serán olvidadas.
-                  Da igual lo que hayamos hecho en el pasado, o cómo se nos
-                  recordará. Lo único que importa es este instante, este
-                  momento, este momento espectacular que estamos compartiendo
-                  juntos. ¿Verdad, Sarah Lynn? ¿Sarah Lynn?</q
-                >
-                <q
-                  >¿Soy responsable de mi propia felicidad? ¡No puedo ni ser
-                  responsable de mi propio desayuno!</q
-                >
-                <q
-                  >¿Sabes? A veces siento que nací con una fuga, y cualquier
-                  bondad con la que haya empezado lentamente se ha derramado de
-                  mí y ahora la he perdido toda. Y nunca la voy a recuperar. Es
-                  muy tarde. La vida es una serie de puertas cerrándose, ¿no?</q
-                >
-                <p>Actor: <strong lang="en">Will Arnett</strong></p>
-              </div>
-            </div>
-          </div>
+        <form action="#" method="post" enctype="text/plain">
+          <h3>Subscríbite a nuestro newsletter</h3>
+          <label for="mail">Nombre</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            placeholder="Nombre y apellido"
+            required
+          />
+          <label for="mail">Email</label>
 
-          <div class="character" id="todd">
-            <h3>Todd Chavez</h3>
-            <div class="picandtext">
-              <img src="assets/personajes/todd.png" alt="Todd Chavez" />
-              <div class="textpj">
-                <p>
-                  Es un personaje amable y adorable que termina en la casa de
-                  <strong lang="en">BoJack</strong> luego de una fiesta cinco
-                  años antes del comienzo de la serie.
-                </p>
-                <p>
-                  A menudo se encuentra en situaciones absurdas y peligrosas. Él
-                  ve lo mejor en <strong lang="en">BoJack</strong>. Suele estar
-                  siempre feliz.
-                </p>
-                <q
-                  >Y cuando no te arrepientes del tatuaje en la mañana, ahí
-                  sabes que es amor.</q
-                >
-                <q
-                  >Necesito dejar de esperar que cambies y seas una buena
-                  persona para que así no me lastimes cuando no lo seas</q
-                >
-                <q
-                  >Él que está mal en todo esto, eres tú. No es el alcohol, las
-                  drogas o cualquiera de las cosas malas que te pasaron en tu
-                  carrera o cuando eras niño. Eres tú</q
-                >
-                <q
-                  >No soy gay, es decir, creo que no lo soy, pero... tampoco
-                  creo que sea hetero. No sé que soy. Creo que no soy nada</q
-                >
-                <p>Actor: <strong lang="en">Aaron Paul</strong></p>
-              </div>
-            </div>
-          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo electrónico"
+            required
+          />
+          <label for="tel">Celular</label>
+          <input
+            type="tel"
+            name="telefono"
+            id="telefono"
+            placeholder="Celular"
+          />
 
-          <div class="character" id="pc">
-            <h3 lang="en">Princess Carolyn</h3>
-            <div class="picandtext">
-              <img src="assets/personajes/pc.png" alt="Princess Carolyn" />
-              <div class="textpj">
-                <p>
-                  Empezó a trabajar como secretaria en
-                  <strong lang="en">Vigor Talent</strong> a principios de los
-                  noventa. Fue ascendiendo para ser una de las mejores agenntes.
-                </p>
-                <p>
-                  Es sincera, inteligente y trabajadora. Tiene varios debates
-                  entre priorizar su carrera o sus relaciones personales.
-                </p>
-                <p>
-                  Admite que compulsivamente necesita hacerse cargo de otros
-                  cuando siente que está perdiendo el control de su vida.
-                </p>
-                <q>
-                  No sé cómo esperas que alguien te ame cuando tú tan claramente
-                  te odias a ti mismo.</q
-                >
-                <q
-                  >¿Sabes qué es lo peor? Sabía que esto iba a suceder y me
-                  permití emocionarme de todos modos.</q
-                >
-                <q
-                  >Tienes que enderezar tu vida. Ayer caíste en la trampa del
-                  amor y te rompieron el corazón, te lo mereces por tener
-                  sentimientos. A partir de ahora eres una dura y cruel
-                  profesiona, ve a trabajar, sé genial haciéndolo. No pierdas el
-                  tiempo fantaseando,de ahora en adelante eres un robot.
-                </q>
-                <p>Actriz: <strong lang="en">Amy Sedaris</strong></p>
-              </div>
-            </div>
-          </div>
-        </div>
+          <label for="multi">Mensaje</label>
+          <textarea
+            name="mensaje"
+            id="mensaje"
+            placeholder="Mensaje"
+          ></textarea>
 
-        <div class="flexpj">
-          <div class="character" id="dn">
-            <h3 lang="en">Diane Nguyen</h3>
-            <div class="picandtext">
-              <img src="assets/personajes/diane.png" alt="Diane Nguyen" />
-              <div class="textpj">
-                <p>
-                  De una familia vietnamita-americana de clase media baja, con
-                  cuatro hermanos brutos y machistas que se burlan
-                  constantemente de ella. Sin embargo, ella logra convertirse en
-                  una escritora independiente, reflexiva y preocupada por los
-                  problemas sociales.
-                </p>
-                <p>
-                  Tiene un carácter melancólico que tiende a la depresión.
-                  Contrasta con los personajes del mundo frívolo. Pero, mientras
-                  más se aleja de ese mundo, más compleja se vuelve su
-                  existencia y cae en una profunda depresión.
-                </p>
-                <q
-                  >No puedo seguir preguntándome si soy feliz, porque sólo me
-                  hace más infeliz. No sé si creo en la verdadera felicidad.</q
-                >
-                <q
-                  >Ese es el problema con la vida: o bien sabes lo que quieres y
-                  no consigues lo que quieres, u obtienes lo que quieres y ya no
-                  sabes lo que quieres.</q
-                >
-                <q>Para mí una persona se define con las cosas que hace.</q>
-                <q
-                  >Me haces muy bien. Pero no puedo estar contigo si eres lo
-                  único bueno en mi vida.</q
-                >
-                <p>Actriz: <strong lang="en">Alison Brie</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="character" id="sl">
-            <h3 lang="en">Sarah Lynn</h3>
-            <div class="picandtext">
-              <img src="assets/personajes/sarah.png" alt="Sarah Lynn" />
-              <div class="textpj">
-                <p>
-                  Solo siendo una niña se hace famosa junto a
-                  <strong lang="en">BoJack</strong>, en la serie
-                  <em lang="en">Horin' Around</em>. Careció de una infancia
-                  real, no tenía amigos y su padrastro la educaba en su casa.
-                  Luego de su carrera como actriz, se lanza como estrella de pop
-                  adolescente, convirtiéndose así en un ícono sexual siendo
-                  menor de edad.
-                </p>
-                <p>
-                  Luego de pasar su tiempo de fama, cae en el vicio de las
-                  drogas y el alcohol. Pasa por relaciones poco estables y malas
-                  influencias.
-                </p>
-                <q
-                  >Sé que sonrío ahora. Pero la luz dentro de mí se está
-                  apagando</q
-                >
-                <q>No me gusta nada de mí. No soy nada de esto.</q>
-                <q
-                  >Siento que mis amigos nada más me quieren por ser Sarah
-                  Lynn</q
-                >
-                <p>Actriz: <strong lang="en">Kristen Schaal</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="character" id="mrp">
-            <h3 lang="en">Mr. Peanutbutter</h3>
-            <div class="picandtext">
-              <img
-                src="assets/personajes/mrpeanutbutter.png"
-                alt="Mr Peanutbutter"
-              />
-              <div class="textpj">
-                <p>
-                  Un Labrador Retriever, enérgetico, simpático y alegre. Fue la
-                  estrella de
-                  <strong lang="en">Mr. Peanutbutter's House</strong>, una
-                  comedia similar a la que protagonizaba
-                  <strong lang="en">BoJack</strong>, esto lo vuelve un rival
-                  para el protagonista.
-                </p>
-                <p>
-                  Creció en la <em>Península de Labrador</em>, y es graduado de
-                  la
-                  <em>Universidad <em lang="en"> Northwestern </em> </em>
-                </p>
-                <p>
-                  Protagoniza un reality llamado
-                  <strong lang="en">Peanutbutter and Jelly</strong>, y más tarde
-                  tiene su propio programa de juegos televisado,
-                  <strong lang="en"
-                    >Holywoo Stars and Celebrities: What Do They Know? Do They
-                    Know Things?? Let's Find Out!
-                  </strong>
-                </p>
-                <q>
-                  La clave para ser feliz no es la búsqueda de sentido, sino
-                  simplemente mantenerte ocupado con disparates sin importancia
-                  hasta, eventualmente, morir.
-                </q>
-                <q
-                  >Es tan cruel dejar que la gente te ame. Todo lo que haces es
-                  prometerles que un día les romperás el corazón.</q
-                >
-                <q
-                  >No sé muchas cosas. Pero sí sé una cosa: todos merecemos ser
-                  amados.</q
-                >
-
-                <p>Actor: <strong lang="en">Paul F. Tompkins</strong></p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="flexpj">
-          <div class="character" id="hh">
-            <h3 lang="en">Hollyhock</h3>
-
-            <div class="picandtext">
-              <img src="assets/personajes/hh.png" alt="Hollyhock " />
-              <div class="textpj">
-                <p>
-                  Su nombre completo es:
-                  <strong lang="en">
-                    Manheim-Mannheim-Guerrero-Robinson-Zilberschlag-Hsung-Fonzerelli-McQuackShe
-                  </strong>
-                </p>
-                <p>
-                  Su nombre compuesto por ocho apellidos tiene lugar a que es la
-                  hija adoptiva de una familia poliamorosa de ocho hombres. Si
-                  bien toda su vida recibió amor y apoyo, siempre quiso saber
-                  quiénes eran sus padres biológicos. Tiene un parentesco con
-                  <strong lang="en">BoJack</strong> que se descubre a lo largo
-                  de la serie.
-                </p>
-                <p>
-                  Es ansiosa como el protagonista de la serie, pero con una
-                  personalidad más querible. Es una joven inteligente, buena,
-                  cariñosa, quien terminó sus estudios y se encuentra tomando un
-                  año sabático.
-                </p>
-                <q>
-                  Esa voz en tu cabeza, que te dice que sos insuficiente,
-                  estúpida y fea, desaparece, ¿verdad?</q
-                >
-                <q
-                  >Está bien, no busco tener una relación. Ya tengo ocho padres.
-                  No es como que tener nueve va a llenar este agujero que tuve
-                  durante toda mi vida.</q
-                >
-                <q
-                  >Dicen que está bien que llore. Y que no debería sentirme mal
-                  por sentirme mal</q
-                >
-                <p>Actriz: <strong lang="en">Aparna Nancherla</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="character" id="bh">
-            <h3 lang="en">Beatrice Horseman</h3>
-            <div class="picandtext">
-              <img
-                src="assets/personajes/beatrice_.png"
-                alt="Beatrice Horseman"
-              />
-              <div class="textpj">
-                <p>
-                  Es la madre negligente y abusiva de
-                  <strong lang="en">BoJack Horseman</strong>, la viuda de
-                  <strong lang="en">Butterscotch Horseman</strong>, y la
-                  heredera de una fortuna.
-                </p>
-                <q
-                  >No creo que seas aburrido, solamente de lo que elegís
-                  hablar.</q
-                >
-                <q>No te sientes tan cerca de la tele, te va a hacer cruel</q>
-                <q
-                  >Sé que queres ser feliz, pero no lo vas a ser. No sos solo
-                  vos, tu padre y yo, nosotros bueno... venís con esta fealdad
-                  dentro. Naciste roto. Podes llenar tu vida de tus proyectos,
-                  tus libros, tus películas, tu noviecita, pero todo eso no te
-                  va a volver completo. Sos
-                  <strong lang="en">BoJack Horseman</strong>, y no hay cura para
-                  ello.</q
-                >
-                <p>Actriz: <strong lang="en">Wendie Malick</strong></p>
-              </div>
-            </div>
-          </div>
-
-          <div class="character" id="hk">
-            <h3 lang="en">Herb Kazzaz</h3>
-            <div class="picandtext">
-              <img src="assets/personajes/herb.png" alt="Herb Kazzaz" />
-              <div class="textpj">
-                <p>
-                  Fue el mejor amigo y mentor de
-                  <strong lang="en">BoJack</strong>. Fue quien creó y escribió
-                  <strong lang="en">Horsin' Around</strong>, y el que le
-                  consiguió el papel a su amigo.
-                </p>
-                <p>
-                  Es un personaje recurrente en los recuerdos del protagonista.
-                </p>
-
-                <q
-                  >¿Queres un cierre? No te mereces eso. Vas a tener que saber
-                  lo que hiciste por el resto de tu vida. Nunca va a estar bien.
-                  (...) Me estoy muriendo, no voy a estar mejor. No voy a ser tu
-                  utencillo para que puedas sentirte mejor.
-                </q>
-                <q
-                  >¡No me interesa el trabajo! Estuve bien, tuve una buena vida.
-                  Pero necesitaba a mi amigo, y vos me abandonaste. Nunca te voy
-                  a perdonar por eso.</q
-                >
-
-                <p>Actor: <strong lang="en"> Stanley Tucci</strong></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="lahistoria" id="his">
-        <h2>Historia</h2>
-        <h3 id="s1">Temporada 1</h3>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0101.png" alt="BoJack S01xE01" />
-            <div class="textincap">
-              <h4>Capítulo 1</h4>
-              <p>La historia de <strong lang="en">BoJack</strong></p>
-            </div>
-          </div>
-
-          <div class="cap">
-            <img src="assets/episodios/0102.png" alt="BoJack S01xE02" />
-            <div class="textincap">
-              <h4>Capítulo 2</h4>
-
-              <p><strong lang="en">BoJack</strong> enemigo público</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0103.png" alt="BoJack S01xE03" />
-            <div class="textincap">
-              <h4>Capítulo 3</h4>
-              <p>Fantasmas del pasado</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0104.png" alt="BoJack S01xE04" />
-            <div class="textincap">
-              <h4>Capítulo 4</h4>
-              <p>Entre Zoe y Zelda</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0105.png" alt="BoJack S01xE05" />
-            <div class="textincap">
-              <h4>Capítulo 5</h4>
-              <p>Corre <strong lang="en">Diane</strong>, corre</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0106.png" alt="BoJack S01xE06" />
-            <div class="textincap">
-              <h4>Capítulo 6</h4>
-              <p>Relación turbulenta</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0107.png" alt="BoJack S01xE07" />
-            <div class="textincap">
-              <h4>Capítulo 7</h4>
-              <p>Di algo</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0108.png" alt="BoJack S01xE08" />
-            <div class="textincap">
-              <h4>Capítulo 8</h4>
-              <p>El telescopio</p>
-            </div>
-          </div>
-        </div>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0109.png" alt="BoJack S01xE09" />
-            <div class="textincap">
-              <h4>Capítulo 9</h4>
-              <p>Caballo conmocionado</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0110.png" alt="BoJack S01xE10" />
-            <div class="textincap">
-              <h4>Capítulo 10</h4>
-              <p>Truco de poni</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0111.png" alt="BoJack S01xE11" />
-
-            <div class="textincap">
-              <h4>Capítulo 11</h4>
-              <p>Final feliz</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0112.png" alt="BoJack S01xE12" />
-
-            <div class="textincap">
-              <h4>Capítulo 12</h4>
-              <p>Tarde</p>
-            </div>
-          </div>
-        </div>
-
-        <h3 id="sn">Especial Navideño</h3>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/navidad.png" alt="BoJack navidad" />
-            <div class="textincap">
-              <p>El deseo de Navidad de Sabrina</p>
-            </div>
-          </div>
-        </div>
-
-        <h3 id="s2">Temporada 2</h3>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0201.png" alt="BoJack S02xE01" />
-            <div class="textincap">
-              <h4>Capítulo 1</h4>
-              <p>Un sofá completamente nuevo</p>
-            </div>
-          </div>
-
-          <div class="cap">
-            <img src="assets/episodios/0202.png" alt="BoJack S02xE02" />
-            <div class="textincap">
-              <h4>Capítulo 2</h4>
-              <p>Pasadolandia</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0203.png" alt="BoJack S02xE03" />
-            <div class="textincap">
-              <h4>Capítulo 3</h4>
-              <p>Irreparable</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0204.png" alt="BoJack S02xE04" />
-
-            <div class="textincap">
-              <h4>Capítulo 4</h4>
-              <p><strong lang="en">After Party</strong></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0205.png" alt="BoJack S02xE05" />
-            <div class="textincap">
-              <h4>Capítulo 5</h4>
-              <p>Gallinas</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0206.png" alt="BoJack S02xE06" />
-            <div class="textincap">
-              <h4>Capítulo 6</h4>
-              <p>Amor pendiente</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0207.png" alt="BoJack S02xE07" />
-            <div class="textincap">
-              <h4>Capítulo 7</h4>
-              <p>Hank de noche</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0208.png" alt="BoJack S02xE08" />
-            <div class="textincap">
-              <h4>Capítulo 8</h4>
-              <p>Averigüémoslo</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0209.png" alt="BoJack S02xE09" />
-            <div class="textincap">
-              <h4>Capítulo 9</h4>
-              <p>La escena</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0210.png" alt="BoJack S02xE10" />
-            <div class="textincap">
-              <h4>Capítulo 10</h4>
-              <p>Sí, y</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0211.png" alt="BoJack S02xE11" />
-            <div class="textincap">
-              <h4>Capítulo 11</h4>
-              <p>Escape de L.A.</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0212.png" alt="BoJack S02xE12" />
-            <div class="textincap">
-              <h4>Capítulo 12</h4>
-              <p>Hacia el mar</p>
-            </div>
-          </div>
-        </div>
-
-        <h3 id="s3">Temporada 3</h3>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0301.png" alt="BoJack S03xE01" />
-
-            <div class="textincap">
-              <h4>Capítulo 1</h4>
-              <p>Corran la voz</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0302.png" alt="BoJack S03xE02" />
-
-            <div class="textincap">
-              <h4>Capítulo 2</h4>
-              <p>El programa de <strong lang="en">BoJack Horseman</strong></p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0303.png" alt="BoJack S03xE03" />
-
-            <div class="textincap">
-              <h4>Capítulo 3</h4>
-              <p><strong lang="en">BoJack</strong> mata</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0304.png" alt="BoJack S03xE04" />
-
-            <div class="textincap">
-              <h4>Capítulo 4</h4>
-              <p><strong lang="en">Fish out of water</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0305.png" alt="BoJack S03xE05" />
-
-            <div class="textincap">
-              <h4>Capítulo 5</h4>
-              <p>Amor y/o matrimonio</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0306.png" alt="BoJack S03xE06" />
-            <div class="textincap">
-              <h4>Capítulo 6</h4>
-              <p>Brrap Brrap Pew Pew</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0307.png" alt="BoJack S03xE07" />
-            <div class="textincap">
-              <h4>Capítulo 7</h4>
-              <p>Paren las prensas</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0308.png" alt="BoJack S03xE08" />
-            <div class="textincap">
-              <h4>Capítulo 8</h4>
-              <p>Viejos conocidos</p>
-            </div>
-          </div>
-        </div>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0309.png" alt="BoJack S03xE09" />
-            <div class="textincap">
-              <h4>Capítulo 9</h4>
-              <p>Lo mejor que pudo haberte pasado</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0310.png" alt="BoJack S03xE10" />
-            <div class="textincap">
-              <h4>Capítulo 10</h4>
-              <p>Eres tú</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0311.png" alt="BoJack S03xE11" />
-            <div class="textincap">
-              <h4>Capítulo 11</h4>
-              <p>¡Eso es demasiado, viejo!</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0312.png" alt="BoJack S03xE12" />
-
-            <div class="textincap">
-              <h4>Capítulo 12</h4>
-              <p>Eso salió bien</p>
-            </div>
-          </div>
-        </div>
-
-        <h3 id="s4">Temporada 4</h3>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0401.png" alt="BoJack S04xE01" />
-
-            <div class="textincap">
-              <h4>Capítulo 1</h4>
-              <p>
-                El señor <strong lang="en">Peanutbutter</strong> se mete en
-                política
-              </p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0402.png" alt="BoJack S04xE02" />
-
-            <div class="textincap">
-              <h4>Capítulo 2</h4>
-              <p>La vieja casa de los <strong lang="en">Sugarman</strong></p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0403.png" alt="BoJack S04xE03" />
-
-            <div class="textincap">
-              <h4>Capítulo 3</h4>
-              <p>¡Viva! ¡El episodio de Todd!</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0404.png" alt="BoJack S04xE04" />
-            <div class="textincap">
-              <h4>Capítulo 4</h4>
-              <p><strong lang="en">Commence Fracking</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0405.png" alt="BoJack S04xE05" />
-
-            <div class="textincap">
-              <h4>Capítulo 5</h4>
-              <p>Mis condolencia</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0406.png" alt="BoJack S04xE06" />
-            <div class="textincap">
-              <h4>Capítulo 6</h4>
-              <p>Estúpido desgraciado</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0407.png" alt="BoJack S04xE07" />
-            <div class="textincap">
-              <h4>Capítulo 7</h4>
-              <p>Bajo tierra</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0408.png" alt="BoJack S04xE08" />
-            <div class="textincap">
-              <h4>Capítulo 8</h4>
-              <p>El juez</p>
-            </div>
-          </div>
-        </div>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0409.png" alt="BoJack S04xE09" />
-            <div class="textincap">
-              <h4>Capítulo 9</h4>
-              <p><strong lang="en">Ruthie</strong></p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0410.png" alt="BoJack S04xE10" />
-            <div class="textincap">
-              <h4>Capítulo 10</h4>
-              <p>¡Me encanta el estilo de vida californiano!</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0411.png" alt="BoJack S04xE11" />
-            <div class="textincap">
-              <h4>Capítulo 11</h4>
-              <p>La flecha del tiempo</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0412.png" alt="BoJack S04xE12" />
-            <div class="textincap">
-              <h4>Capítulo 12</h4>
-              <p>¿Qué hora es exactamente?</p>
-            </div>
-          </div>
-        </div>
-
-        <h3 id="s5">Temporada 5</h3>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0501.png" alt="BoJack S05xE01" />
-
-            <div class="textincap">
-              <h4>Capítulo 1</h4>
-              <p>La escena del desnudo</p>
-            </div>
-          </div>
-
-          <div class="cap">
-            <img src="assets/episodios/0502.png" alt="BoJack S05xE02" />
-            <div class="textincap">
-              <h4>Capítulo 2</h4>
-              <p>Los días de perros se acabaron</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0503.png" alt="BoJack S05xE03" />
-            <div class="textincap">
-              <h4>Capítulo 3</h4>
-              <p>Obsolescencia programada</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0504.png" alt="BoJack S05xE04" />
-            <div class="textincap">
-              <h4>Capítulo 4</h4>
-              <p><strong lang="en">BoJack</strong>el feminista</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0505.png" alt="BoJack S05xE05" />
-            <div class="textincap">
-              <h4>Capítulo 5</h4>
-              <p>La historia de <strong lang="en">Amelia Earheart</strong></p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0506.png" alt="BoJack S05xE06" />
-            <div class="textincap">
-              <h4>Capítulo 6</h4>
-              <p>Churro gratiso</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0507.png" alt="BoJack S05xE07" />
-            <div class="textincap">
-              <h4>Capítulo 7</h4>
-              <p>Interior. Sub</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0508.png" alt="BoJack S05xE08" />
-            <div class="textincap">
-              <h4>Capítulo 8</h4>
-              <p>Las novias de <strong lang="en">Mr. Peanutbutter</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0509.png" alt="BoJack S05xE09" />
-            <div class="textincap">
-              <h4>Capítulo 9</h4>
-              <p>Historia antigua</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0510.png" alt="BoJack S05xE10" />
-            <div class="textincap">
-              <h4>Capítulo 10</h4>
-              <p>Con la cabeza en las nubes</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0511.png" alt="BoJack S05xE11" />
-            <div class="textincap">
-              <h4>Capítulo 11</h4>
-              <p>La serie en crisis</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0512.png" alt="BoJack S05xE12" />
-            <div class="textincap">
-              <h4>Capítulo 12</h4>
-              <p>La serie cancelada</p>
-            </div>
-          </div>
-        </div>
-
-        <h3 id="s6">Temporada 6</h3>
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0601.png" alt="BoJack S06xE01" />
-            <div class="textincap">
-              <h4>Capítulo 1</h4>
-              <p>Un caballo entra a rehabilitación</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0602.png" alt="BoJack S06xE02" />
-            <div class="textincap">
-              <h4>Capítulo 2</h4>
-              <p>La nueva clienta</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0603.png" alt="BoJack S06xE03" />
-            <div class="textincap">
-              <h4>Capítulo 3</h4>
-              <p>Una historia edificante</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0604.png" alt="BoJack S06xE04" />
-            <div class="textincap">
-              <h4>Capítulo 4</h4>
-              <p>Sorpresa</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0605.png" alt="BoJack S06xE05" />
-            <div class="textincap">
-              <h4>Capítulo 5</h4>
-              <p>Un poco disparejo, es todo</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0606.png" alt="BoJack S06xE06" />
-            <div class="textincap">
-              <h4>Capítulo 6</h4>
-              <p>El riñón que conquistó <bold lang="en">Hollywood</bold></p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0607.png" alt="BoJack S06xE07" />
-            <div class="textincap">
-              <h4>Capítulo 7</h4>
-              <p>El rostro de la depresión</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0608.png" alt="BoJack S06xE08" />
-            <div class="textincap">
-              <h4>Capítulo 8</h4>
-              <p>Uno rapidito mientras él no esta</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0609.png" alt="BoJack S06xE09" />
-            <div class="textincap">
-              <h4>Capítulo 9</h4>
-              <p>
-                Estudio de escena intermedia con
-                <strong lang="en">BoJack Horseman</strong>
-              </p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0610.png" alt="BoJack S06xE10" />
-            <div class="textincap">
-              <h4>Capítulo 10</h4>
-              <p>Daño del bueno</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0611.png" alt="BoJack S06xE11" />
-            <div class="textincap">
-              <h4>Capítulo 11</h4>
-              <p>Costo irrecuperable y todo eso</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0612.png" alt="BoJack S06xE12" />
-            <div class="textincap">
-              <h4>Capítulo 12</h4>
-              <p>Fotocopia de una fotocopia</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="capitulos">
-          <div class="cap">
-            <img src="assets/episodios/0613.png" alt="BoJack S06xE13" />
-            <div class="textincap">
-              <h4>Capítulo 13</h4>
-              <p>El unicornio cachondo</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0614.png" alt="BoJack S06xE14" />
-            <div class="textincap">
-              <h4>Capítulo 14</h4>
-              <p>Angela</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0615.png" alt="BoJack S06xE15" />
-            <div class="textincap">
-              <h4>Capítulo 15</h4>
-              <p>A medio camino</p>
-            </div>
-          </div>
-          <div class="cap">
-            <img src="assets/episodios/0616.png" alt="BoJack S06xE16" />
-            <div class="textincap">
-              <h4>Capítulo 16</h4>
-              <p>Fue lindo mientras duró</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="analisis" id="ana">
-        <h2>Análisis</h2>
-
-        <div class="bloqueanalisis">
-          <div class="analisis_in">
-            <h3 id="a1">Debate existencial</h3>
-            <img
-              src="assets/otros/dudaexistencial.jpg"
-              alt="BoJack depresivo"
-            />
-            <div class="textanalisis">
-              <p>
-                El personaje principal echa todo a perder por culpa del alcohol,
-                las drogas, las relaciones fracasadas y el desprecio que se
-                tiene a sí mismo. Constantemente se enfrenta con la soledad, la
-                crisis existencial y la autodestrucción.
-              </p>
-              <p>
-                La serie plasma la depresión existencial. Los personajes no son
-                lejanos a la realidad de cada individuo en este mundo. Todos
-                somos BoJack Horseman en algún punto, sumidos en todo este caos
-                interno que hace replantearnos toda nuestra existencia.
-              </p>
-              <p>
-                Nos lleva a reflexionar sobre nuestra finalidad, nuestra
-                actualidad y el vacío existencial de la vida moderna que
-                vivimos.
-              </p>
-              <a
-                href=" https://cinefiloserial.com.ar/bojack-horseman-un-debate-existencial-continuo-y-todos-somos-bojack/"
-                target="_blank"
-                >Más información
-              </a>
-            </div>
-          </div>
-          <div class="analisis_in">
-            <h3 id="a2">Villano como protagonista</h3>
-            <img src="assets/otros/bojack_villano.png" alt="BoJack con globo" />
-            <div class="textanalisis">
-              <p>
-                El protagonista podría ser considerado el villano de esta
-                historia. Es ser totalmente cinico, que termina envenenando con
-                sus propios demonios a todos los que lo rodean.
-              </p>
-              <p>
-                BoJack no aprende de sus errores, los repite uno tras otro. Si
-                bien él está en un estado constante de lamento y arrepentimiento
-                por las decisiones que toma, jamás cambia.
-              </p>
-              <p>
-                Si hacemos una lista de todas sus actitudes a lo largo de la
-                historia, BoJack sería el villano. Pero la serie nos explica
-                cada una de las razones detrás de su comportamiento, y
-                terminamos por entenderlo y justificarlo.
-              </p>
-              <p>
-                Las escenas más fuertes y drámaticas son las que nos presentan
-                el pasado de BoJack, cuando vemos como fue su niñez. Con una
-                madre que lo odió desde el día en que nació, y un padre violento
-                y frío. También vemos la historia de su madre, que tuvo una
-                infancia incluso más trágica que la de BoJack pero, ¿hasta qué
-                punto podemos justificar nuestras acciones por nuestro entorno?
-              </p>
-              <p>
-                La serie lleva a la reflexión, nos evidencia que en la vida los
-                villanos pueden ser relativos según las perspectivas en las que
-                una historia está contada. Ya que, si la serie fuese contada
-                desde el punto de vista de, por ejemplo, Hollyhock, veríamos a
-                BoJack como un personaje totalmente despreciable.
-              </p>
-
-              <a
-                href=" https://www.mundopeliculas.tv/2021/05/08/serie-bojack-horseman/"
-                target="_blank"
-                >Más información
-              </a>
-            </div>
-          </div>
-          <div class="analisis_in">
-            <h3 id="a3">Cierre impecable</h3>
-            <img src="assets/otros/bojack_final.png" alt="BoJack triste" />
-            <div class="textanalisis">
-              <p>
-                El 31 de enero del 2020 llegó el final de la serie. La última
-                temporada juega mucho con la idea de la redención de BoJack. Y
-                para el cierre el personaje tuvo que enfrentarse a todos los
-                fantasmas de su pasado, para ver si realmente merecía o no un
-                fnal feliz.
-              </p>
-              <p>
-                A lo largo de la serie los demás personajes ven los errores de
-                BoJack, y sus cuestionables actitudes. Pero parecen justificarlo
-                o entenderlo de alguna forma, dejando pasar demasiadas
-                cuestiones. No obstante, al final son ellos mismos quienes
-                asumen las verdades que venían tanto tiempo omitiendo, y
-                entienden que deben alejarse de BoJack para dejar de salir
-                lastimados. Entienden que ellos mismos son los que
-              </p>
-              <p>
-                En el último dialogo de Diane y BoJack, se tratan cuestiones
-                como la capacidad de identificar la felicidad cuando por fin se
-                presenta en su vida, y de no temer dicha felicidad por culpa de
-                las tendencias depresivas que sabotean su existencia.
-              </p>
-              <a
-                href=" https://www.espinof.com/criticas/bojack-horseman-tiene-final-extraordinario-serie-netflix-se-gana-puesto-mejores-historia"
-                target="_blank"
-                >Más información
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="liint" id="linksdeint">
-        <h2>Links de interés</h2>
-
-        <div class="linksdein">
-          <div class="links">
-            <a
-              href="https://www.netflix.com/ar/title/70300800r"
-              target="_blank"
-            >
-              <img src="assets/logos/netflix.svg" alt="Netflix" />
-            </a>
-          </div>
-
-          <div class="links">
-            <a
-              href=" https://www.amazon.com/s?k=bojack&adgrpid=85279052327&gclid=Cj0KCQjwmouZBhDSARIsALYcouqfrZ4m6aezdQ0Ak__zOIl3KsoOIRkncUNwsrWuQ4cMQ3Y4aCjEpfIaAqTyEALw_wcB&hvadid=585479886698&hvdev=c&hvlocphy=9041020&hvnetw=g&hvqmt=b&hvrand=18136973986840521039&hvtargid=kwd-271283028&hydadcr=29489_14573936&tag=hydglogoo-20&ref=pd_sl_8ix3u3x34e_br"
-              target="_blank"
-            >
-              <img src="assets/logos/amazon.svg" alt="Amazon" />
-            </a>
-          </div>
-
-          <div class="links">
-            <a
-              href="    https://www.instagram.com/bojackhorseman/"
-              target="_blank"
-            >
-              <img src="assets/logos/ig.svg" alt="Instagram" />
-            </a>
-          </div>
-        </div>
-      </div>
+          <p>¿Aceptas los términos y condiciones?</p>
+          <div>
+            <label>
+              <input type="radio" name="terminos" value="1" />
+              <span>Sí</span>
+            </label>
+            <label>
+              <input type="radio" name="terminos" value="2" />
+              <span>No</span>
+            </label>
+          </div>
+          <div>
+            <input type="submit" value="Send" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer>
