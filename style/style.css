@@ -1,14 +1,33 @@
+/*PARA TODAS LAS SECCIONES*/
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(255, 255, 255);
   background-color: #336699;
 }
+
 main {
   margin-top: 20px;
   width: 80%;
   margin: auto;
   justify-content: center;
   align-items: center;
+}
+.introduction,
+.pj,
+.lahistoria,
+.dest,
+.analisis,
+.links {
+  margin-top: 150px;
+}
+main > section > p {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+main > section > h1 {
+  display: none;
 }
 
 /*Text*/
@@ -51,46 +70,41 @@ textarea {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/*HEADER*/
-.banner {
-  display: flex;
-  padding: 30px;
-  background-color: #122e4b50;
-  border-radius: 10px;
-  align-items: center;
-  gap: 50px;
-  margin-top: 100px;
-}
-.banner-im {
-  width: 60%;
-  border-radius: 10px;
-}
-
 /*NAV BAR*/
 nav {
+  position: fixed;
   padding: 20px;
   top: 0;
   left: 0;
   right: 0;
-  position: fixed;
-  opacity: 0.2;
   z-index: 1;
+  background-color: #122e4be0;
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.438);
 }
 nav:hover {
   opacity: 1;
-  background-color: #122e4bb0;
+  background-color: #122e4b;
+  box-shadow: 0 0 15px 5px rgb(6, 197, 197);
 }
 nav > div {
   display: flex;
   width: 80%;
+}
+.navdest:hover {
+  box-shadow: 0 0 15px 5px rgb(219, 14, 14);
 }
 .selected a {
   color: rgb(6, 197, 197);
   text-decoration: solid;
   letter-spacing: 6px;
 }
+
 nav > div a:hover {
   color: rgb(6, 197, 197);
+  letter-spacing: 6px;
+}
+.navdest > div > div > div > a:hover {
+  color: rgb(197, 6, 6);
   letter-spacing: 6px;
 }
 nav > div > div {
@@ -128,7 +142,7 @@ nav > div > div > .navlinks {
 nav > div > div > div {
   display: none;
   position: absolute;
-  background-color: #122e4b;
+  background-color: #122e4bf8;
   min-width: 360px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
@@ -137,20 +151,21 @@ nav > div > div > div {
   display: block;
 }
 
-/*PARA TODAS LAS SECCIONES*/
-.introduction,
-.pj,
-.lahistoria,
-.dest,
-.analisis,
-.links {
-  margin-top: 120px;
+/*HEADER*/
+.banner {
+  display: flex;
+  padding: 30px;
+  background-color: #122e4b50;
+  border-radius: 10px;
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
 }
-section > p {
-  width: 50%;
-  margin: auto;
-  text-align: center;
+.banner-im {
+  width: 60%;
+  border-radius: 10px;
 }
+
 /*Introducción*/
 .introduction > div {
   margin: 50px;
@@ -168,6 +183,7 @@ section > p {
 .introduction > div > div {
   width: 1000px;
 }
+
 /*FORMULARIO*/
 form {
   width: 50%;
@@ -376,7 +392,6 @@ h4 {
 .dest > div {
   background: url(../assets/destacados/spoiler.png),
     linear-gradient(0deg, #941818 5%, #336699 100%);
-
   width: 200px;
   height: 2500px;
 }
@@ -431,6 +446,7 @@ h4 {
   margin: 0;
   margin-left: 5px;
 }
+
 /*Analisis*/
 
 .analisis_in {
@@ -482,18 +498,67 @@ h4 {
 }
 
 /*LINKS*/
-.links > div > div {
+.links > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 50px;
-  gap: 5px;
+  padding-bottom: 25px;
 }
+.links > div > img {
+  border-radius: 50px;
+}
+
+.insidelink {
+  position: relative;
+  width: 770px;
+  font-size: 0;
+}
+
+.insidelink > div {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+}
+.insidelink > div:hover {
+  opacity: 1;
+  transition: 0.6s;
+}
+.insidelink > div > div {
+  position: relative;
+}
+.insidelink > div > div > div {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.555);
+}
+.insidelink > div > div > div > img {
+  width: 500px;
+}
+.insidelink > div > div > div > p {
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(255, 0, 0);
+}
+
 .links > div > div > a > img {
   width: 200px;
 }
+
 .links > div > div > p {
   font-size: 15px;
+}
+/*
+.netflix > div:hover {
+  position: absolute;
+  opacity: 1;
 }
 
 /*FOOTER*/
